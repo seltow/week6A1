@@ -82,7 +82,7 @@ button{
         display: flex;
         flex-wrap: wrap;
         flex-direction: column;
-        margin: 10px;
+        margin: 20px;
         width: 350px ;
         /* height: 450px; */
        
