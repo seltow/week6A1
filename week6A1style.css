@@ -1,0 +1,118 @@
+/* Variable declarations */
+:root{
+    /* Declaring background colors */
+    --brightOrange: hsl(31, 77%, 52%); /*Sedan background*/
+    --darkCyan: hsl(184, 100%, 22%); /*SUV background*/
+    --vDarkCyan: hsl(179, 100%, 13%); /*Luxury background*/
+    
+    /* Declaring writing colors */
+    --tWhite:hsla(0, 0%, 100%, 0.75); /*paragraph color*/
+    --lightGray: hsl(0, 0%, 95%); /*background, headings, buttons color*/
+}
+
+body{
+    background-color: var(--lightGray);
+    color: var(--tWhite);
+}
+
+h1{
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+p{
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+
+/* Grid styling */
+.container{
+    display: grid;
+    grid-template-columns: 305px 305px 305px;
+    grid-template-rows: 500px;
+    margin: 175px 270px;
+}
+
+/* Item styling */
+.leftItem{
+    background-color: var(--brightOrange);
+    padding: 40px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+
+}
+
+.centerItem{
+    background-color: var(--darkCyan);
+    padding: 40px;
+}
+
+.rightItem{
+    background-color: var(--vDarkCyan);
+    padding: 40px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+/* Button stylings */
+button{
+    padding: 20px 50px;
+    background-color: var(--lightGray);
+    border: none;
+    border-radius: 30px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-top: 100px;
+}
+
+#leftButton{
+    color: var(--brightOrange);
+}
+
+#centerButton{
+    color: var(--darkCyan);
+}
+
+#rightButton{
+    color: var(--vDarkCyan);
+} 
+
+@media screen and (max-width: 500px){
+    
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0px;
+        width: 350px ;
+        /* height: 450px; */
+       
+    }
+
+    .leftItem{
+        /* width: 100px; */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 0;
+    
+    }
+    
+    
+    .rightItem{
+        /* width: 100px; */
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 0;
+    }
+    
+    
+    /* Button stylings */
+    button{
+        padding: 20px 50px;
+        background-color: var(--lightGray);
+        border: none;
+        border-radius: 30px;
+        font-family: 'Lexend Deca', sans-serif;
+        margin-top: 20px;
+    }
+}
+
